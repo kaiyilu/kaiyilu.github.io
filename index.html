@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kaiyi Lu | Browser-Native CAD, Math &amp; Ecommerce Tools</title>
+<meta name="description" content="Open-source JavaScript specs and zero-backend web tools by Kaiyi Lu: IES lighting grids, IRC railing math, stained glass SVG CAD, and ecommerce workflows." />
+<link rel="canonical" href="https://kaiyilu.github.io/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Kaiyi Lu" />
+<meta property="og:title" content="Kaiyi Lu — Browser-Native Engineering Tools &amp; Computational Geometry Specs" />
+<meta property="og:description" content="Open-source JavaScript specs and zero-backend web tools by Kaiyi Lu: IES lighting grids, IRC railing math, stained glass SVG CAD, and ecommerce workflows." />
+<meta property="og:url" content="https://kaiyilu.github.io/" />
+<meta name="twitter:card" content="summary" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://kaiyilu.github.io/#person","name":"Kaiyi Lu","url":"https://kaiyilu.github.io/","sameAs":["https://github.com/kaiyilu","https://dev.to/kaiyilu"]},{"@type":"ProfilePage","@id":"https://kaiyilu.github.io/#profile","url":"https://kaiyilu.github.io/","name":"Kaiyi Lu — Browser-Native Engineering Tools & Computational Geometry Specs","mainEntity":{"@id":"https://kaiyilu.github.io/#person"}},{"@type":"CollectionPage","@id":"https://kaiyilu.github.io/#collection","url":"https://kaiyilu.github.io/","name":"Browser-Native Engineering Tools & Open-Source Specifications","author":{"@id":"https://kaiyilu.github.io/#person"},"mainEntity":{"@id":"https://kaiyilu.github.io/#itemlist"}},{"@type":"ItemList","@id":"https://kaiyilu.github.io/#itemlist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"SoftwareSourceCode","name":"building-layout-math","url":"https://kaiyilu.github.io/building-layout-math/","codeRepository":"https://github.com/kaiyilu/building-layout-math"}},{"@type":"ListItem","position":2,"item":{"@type":"SoftwareSourceCode","name":"stained-glass-svg-math","url":"https://kaiyilu.github.io/stained-glass-svg-math/","codeRepository":"https://github.com/kaiyilu/stained-glass-svg-math"}},{"@type":"ListItem","position":3,"item":{"@type":"SoftwareSourceCode","name":"ecommerce-image-specs","url":"https://kaiyilu.github.io/ecommerce-image-specs/","codeRepository":"https://github.com/kaiyilu/ecommerce-image-specs"}},{"@type":"ListItem","position":4,"item":{"@type":"SoftwareSourceCode","name":"canvas-story-deck-kit","url":"https://kaiyilu.github.io/canvas-story-deck-kit/","codeRepository":"https://github.com/kaiyilu/canvas-story-deck-kit"}},{"@type":"ListItem","position":5,"item":{"@type":"WebApplication","name":"Lighting Layout Calculator","url":"https://lightinglayoutcalculator.com/"}},{"@type":"ListItem","position":6,"item":{"@type":"WebApplication","name":"Baluster Spacing Calculator","url":"https://balusterspacingcalculator.com/"}},{"@type":"ListItem","position":7,"item":{"@type":"WebApplication","name":"Retaining Wall Block Calculator","url":"https://retainingwallblockcalculator.com/"}},{"@type":"ListItem","position":8,"item":{"@type":"WebApplication","name":"Stained Glass Pattern Generator","url":"https://stainedglasspatterngenerator.com/"}},{"@type":"ListItem","position":9,"item":{"@type":"WebApplication","name":"QuickKit","url":"https://usequickkit.com/"}},{"@type":"ListItem","position":10,"item":{"@type":"WebApplication","name":"VibeKit","url":"https://usevibekit.com/"}}]}]}
+</script>
+<style>
+:root{--bg:#fcfcfb;--sf:#fff;--fg:#14171a;--mu:#535c68;--ln:#e2e5ea;--ac:#0958d9;--tg:#f1f4f8;--mo:ui-monospace,SFMono-Regular,Menlo,monospace;--sa:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--sf:#151b23;--fg:#e6edf3;--mu:#9198a1;--ln:#2a313c;--ac:#58a6ff;--tg:#1f2733}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.56 var(--sa)}
+header,main,footer{max-width:940px;margin:0 auto;padding:0 20px}
+header{padding:38px 20px 24px;border-bottom:1px solid var(--ln)}
+.k{font:600 12px/1.4 var(--mo);letter-spacing:.06em;text-transform:uppercase;color:var(--mu);margin:0 0 8px}
+h1{font-size:clamp(1.48rem,3vw,2.05rem);line-height:1.22;letter-spacing:-.02em;margin:0 0 12px}
+.lede{margin:0 0 16px;color:var(--mu);max-width:74ch}
+.nav,.m{display:flex;flex-wrap:wrap;gap:8px 14px;font:500 12.5px/1.4 var(--mo)}
+a{color:var(--ac);text-decoration:none}
+a:hover{text-decoration:underline}
+section{padding:26px 0;border-bottom:1px solid var(--ln)}
+h2{font-size:1.16rem;margin:0 0 4px}
+.s{color:var(--mu);margin:0 0 14px;font-size:.93rem}
+.g{display:grid;gap:12px}
+@media(min-width:700px){.g2{grid-template-columns:1fr 1fr}}
+.c{background:var(--sf);border:1px solid var(--ln);border-radius:8px;padding:15px 17px}
+.c h3{font-size:1.01rem;margin:0 0 5px}
+.c p{margin:0 0 9px;color:var(--mu);font-size:.91rem}
+.t{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.t a{display:inline-block;background:var(--tg);border:1px solid var(--ln);border-radius:5px;padding:4px 8px;font:500 12px/1.3 var(--mo)}
+.nl{list-style:none;padding:0;margin:0}
+footer{padding:22px 20px 40px;color:var(--mu);font-size:.87rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+code{font:12px/1.4 var(--mo);background:var(--tg);padding:1px 4px;border-radius:4px}
+</style>
+</head>
+<body>
+<header>
+<p class="k">Engineering Index · Zero-Backend Web Architecture</p>
+<h1>Kaiyi Lu — Browser-Native Engineering Tools &amp; Computational Geometry Specs</h1>
+<p class="lede">Zero-upload browser utilities and open-source JavaScript modules across planar SVG CAD, IES photometric grids, IRC framing math, and client-side ecommerce image pipelines.</p>
+<nav class="nav" aria-label="Sections">
+<a href="https://github.com/kaiyilu">GitHub (@kaiyilu)</a>
+<a href="#s1">01. JS Specs</a>
+<a href="#s2">02. Building &amp; IES</a>
+<a href="#s3">03. Vector CAD</a>
+<a href="#s4">04. Ecommerce</a>
+<a href="#s5">05. Canvas Apps</a>
+<a href="#s6">06. Deep Dives</a>
+</nav>
+</header>
+<main>
+<section id="s1">
+<h2>01. Open-Source Specifications &amp; Zero-Dependency JS Modules</h2>
+<p class="s">ES modules and field guides documenting exact formulas, rounding rules, and geometry structures.</p>
+<div class="g g2">
+<article class="c">
+<h3><a href="https://kaiyilu.github.io/building-layout-math/">building-layout-math</a></h3>
+<p>IES ceiling grids, IRC <code>&lt; 4"</code> baluster centering, <code>1/16"</code> tape rounding, and retaining wall course math.</p>
+<div class="m"><a href="https://kaiyilu.github.io/building-layout-math/">Field Guide &rarr;</a><a href="https://github.com/kaiyilu/building-layout-math">GitHub Source</a></div>
+</article>
+<article class="c">
+<h3><a href="https://kaiyilu.github.io/stained-glass-svg-math/">stained-glass-svg-math</a></h3>
+<p>Planar half-edge topology, shared seam deduplication, copper-foil &amp; lead-came kerf offsets, and SVG export.</p>
+<div class="m"><a href="https://kaiyilu.github.io/stained-glass-svg-math/">Field Guide &rarr;</a><a href="https://github.com/kaiyilu/stained-glass-svg-math">GitHub Source</a></div>
+</article>
+<article class="c">
+<h3><a href="https://kaiyilu.github.io/ecommerce-image-specs/">ecommerce-image-specs</a></h3>
+<p>Marketplace image specs, pure-white perimeter scans, Amazon 85% product fill math, and Shopify/Etsy ratios.</p>
+<div class="m"><a href="https://kaiyilu.github.io/ecommerce-image-specs/">Field Guide &rarr;</a><a href="https://github.com/kaiyilu/ecommerce-image-specs">GitHub Source</a></div>
+</article>
+<article class="c">
+<h3><a href="https://kaiyilu.github.io/canvas-story-deck-kit/">canvas-story-deck-kit</a></h3>
+<p><code>crypto.getRandomValues</code> Fisher-Yates shuffle, card spread coordinates, and <code>1080×1920</code> Canvas2D card export.</p>
+<div class="m"><a href="https://kaiyilu.github.io/canvas-story-deck-kit/">Field Guide &rarr;</a><a href="https://github.com/kaiyilu/canvas-story-deck-kit">GitHub Source</a></div>
+</article>
+</div>
+</section>
+
+<section id="s2">
+<h2>02. Architectural, Photometric &amp; Structural Calculators</h2>
+<p class="s">Code-aware calculators outputting ceiling coordinates, <code>1/16"</code> tape marks, and masonry schedules.</p>
+<div class="g">
+<article class="c">
+<h3><a href="https://lightinglayoutcalculator.com/">Lighting Layout Calculator</a></h3>
+<p>Target foot-candles, fixture counts, spacing-to-mounting-height (<code>S/MH</code>) checks, and room grid coordinates.</p>
+<ul class="t">
+<li><a href="https://lightinglayoutcalculator.com/recessed-lighting-layout-calculator/">Recessed Lighting</a></li>
+<li><a href="https://lightinglayoutcalculator.com/garage-lighting-layout-calculator/">Garage Lighting</a></li>
+<li><a href="https://lightinglayoutcalculator.com/high-bay-lighting-calculator/">High Bay Lighting</a></li>
+<li><a href="https://lightinglayoutcalculator.com/led-lighting-layout-calculator/">LED Lighting Layout</a></li>
+</ul>
+</article>
+<article class="c">
+<h3><a href="https://balusterspacingcalculator.com/">Baluster Spacing Calculator</a></h3>
+<p>Centered vs. even railing bays under IRC R312.1.3 4-inch sphere rules with cumulative <code>1/16"</code> tape marks.</p>
+<ul class="t">
+<li><a href="https://balusterspacingcalculator.com/spindle-spacing-calculator/">Spindle Spacing</a></li>
+<li><a href="https://balusterspacingcalculator.com/deck-post-spacing-calculator/">Deck Post Spacing</a></li>
+<li><a href="https://balusterspacingcalculator.com/fence-post-spacing-calculator/">Fence Post Spacing</a></li>
+</ul>
+</article>
+<article class="c">
+<h3><a href="https://retainingwallblockcalculator.com/">Retaining Wall Block Calculator</a></h3>
+<p>Segmental block courses, base trench embedment, drainage gravel tonnage, timbers, and CMU grout yardage.</p>
+<ul class="t">
+<li><a href="https://retainingwallblockcalculator.com/retaining-wall-gravel-calculator/">Retaining Wall Gravel</a></li>
+<li><a href="https://retainingwallblockcalculator.com/timber-retaining-wall-calculator/">Timber Retaining Wall</a></li>
+<li><a href="https://retainingwallblockcalculator.com/cmu-block-fill-calculator/">CMU Block Fill</a></li>
+</ul>
+</article>
+</div>
+</section>
+
+<section id="s3">
+<h2>03. Computational Craft &amp; Vector CAD Generators</h2>
+<p class="s">Browser geometry studio converting photos and motifs into numbered cutting templates.</p>
+<article class="c">
+<h3><a href="https://stainedglasspatterngenerator.com/">Stained Glass Pattern Generator</a></h3>
+<p>Planar region segmentation with shared half-edges, piece numbering, foil/came kerf allowance, and sheet costing.</p>
+<ul class="t">
+<li><a href="https://stainedglasspatterngenerator.com/photo-to-stained-glass-pattern/">Photo to Stained Glass</a></li>
+<li><a href="https://stainedglasspatterngenerator.com/svg-stained-glass-pattern-generator/">SVG Pattern Generator</a></li>
+<li><a href="https://stainedglasspatterngenerator.com/suncatcher-stained-glass-patterns/">Suncatcher Patterns</a></li>
+<li><a href="https://stainedglasspatterngenerator.com/stained-glass-cost-calculator/">Stained Glass Cost</a></li>
+</ul>
+</article>
+</section>
+
+<section id="s4">
+<h2>04. Client-Side Ecommerce Catalog &amp; Asset Workflows</h2>
+<p class="s">Zero-upload tools to download spreadsheet URLs by SKU, resize catalogs, and audit product images.</p>
+<article class="c">
+<h3><a href="https://usequickkit.com/">QuickKit — Spreadsheet URL Downloader &amp; Marketplace Image Suite</a></h3>
+<p>Excel/CSV feed parser streaming SKU-named ZIPs and auditing Amazon 85% fill, Shopify sizes, and Etsy ratios.</p>
+<ul class="t">
+<li><a href="https://usequickkit.com/how-to-download-files-from-excel-urls">Excel URL Downloader</a></li>
+<li><a href="https://usequickkit.com/bulk-download-product-images-by-sku">Bulk Download by SKU</a></li>
+<li><a href="https://usequickkit.com/shopify-image-size-guide">Shopify Size Guide</a></li>
+<li><a href="https://usequickkit.com/shopify-bulk-image-resizer">Shopify Bulk Resizer</a></li>
+<li><a href="https://usequickkit.com/amazon-main-image-checker">Amazon Image Checker</a></li>
+<li><a href="https://usequickkit.com/etsy-listing-photo-checker">Etsy Photo Checker</a></li>
+</ul>
+</article>
+</section>
+
+<section id="s5">
+<h2>05. Interactive Canvas &amp; Privacy-First Reflection Apps</h2>
+<p class="s">Account-free spreads backed by Web Crypto entropy and local Canvas2D card export.</p>
+<article class="c">
+<h3><a href="https://usevibekit.com/">VibeKit — Interactive Tarot Spreads &amp; Daily Card Studio</a></h3>
+<p>Multi-card spreads and exportable visual cards with zero sign-up walls, cookies, or server logs.</p>
+<ul class="t">
+<li><a href="https://usevibekit.com/yes-or-no-tarot">Yes or No Tarot</a></li>
+<li><a href="https://usevibekit.com/situationship-tarot-spread">Situationship Spread</a></li>
+<li><a href="https://usevibekit.com/love-yes-or-no-tarot">Love Yes or No Tarot</a></li>
+<li><a href="https://usevibekit.com/is-he-thinking-about-me-tarot">Thinking About Me Tarot</a></li>
+<li><a href="https://usevibekit.com/career-yes-or-no-tarot">Career Yes or No Tarot</a></li>
+<li><a href="https://usevibekit.com/daily-vibe-card">Daily Vibe Card</a></li>
+</ul>
+</article>
+</section>
+
+<section id="s6">
+<h2>06. Engineering Notes &amp; Deep Dives</h2>
+<p class="s">Write-ups on fractional rounding math, pixel boundary scanning, and planar half-edge SVG kerf offsets.</p>
+<ul class="g nl">
+<li class="c">
+<h3><a href="https://dev.to/kaiyilu/solving-carpenter-116-tape-rounding-and-ies-lighting-grids-in-vanilla-js-399o">Solving Carpenter 1/16" Tape Rounding and IES Lighting Grids in Vanilla JS</a></h3>
+<p>Eliminating cumulative rounding drift on railing bays and deriving uniform room illumination grids.</p>
+</li>
+<li class="c">
+<h3><a href="https://dev.to/kaiyilu/batch-downloading-excel-image-urls-calculating-amazon-85-product-fill-in-pure-browser-js-aip">Batch-Downloading Excel Image URLs &amp; Calculating Amazon 85% Product Fill in Pure Browser JS</a></h3>
+<p>Concurrency-throttled fetch queues, SKU filename sanitization, and Canvas2D bounding-box checks.</p>
+</li>
+<li class="c">
+<h3><a href="https://dev.to/kaiyilu/generating-cut-ready-stained-glass-svgs-in-pure-browser-js-shared-half-edges-copper-foil-kerf-3dpm">Generating Cut-Ready Stained Glass SVGs in Pure Browser JS: Shared Half-Edges &amp; Copper Foil Kerf</a></h3>
+<p>Watertight polygon cells and inward mitered offsets so adjacent glass pieces fit after foiling.</p>
+</li>
+</ul>
+</section>
+</main>
+<footer>
+<span>&copy; 2026 Kaiyi Lu · MIT-Licensed Open-Source Specs</span>
+<span><a href="https://kaiyilu.github.io/">kaiyilu.github.io</a> · <a href="https://github.com/kaiyilu">github.com/kaiyilu</a> · <a href="https://kaiyilu.github.io/sitemap.xml">Sitemap</a></span>
+</footer>
+</body>
+</html>
